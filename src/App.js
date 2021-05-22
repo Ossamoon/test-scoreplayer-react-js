@@ -26,7 +26,7 @@ class App extends React.Component {
   mouseDownHandler(e) {
     this.setState({
       x: e.clientX,
-      leftSide: this.leftSide.getBoundingClientRect().width
+      leftWidth: this.leftSide.getBoundingClientRect().width
     });
   
     document.addEventListener("mousemove", this.mouseMoveHandler);
