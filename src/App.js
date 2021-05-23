@@ -1,6 +1,21 @@
 import React from 'react';
 import './App.css';
 
+import Sheet1 from './mozart_piano_sonata_11/1.png';
+import Sheet2 from './mozart_piano_sonata_11/2.png';
+import Sheet3 from './mozart_piano_sonata_11/3.png';
+import Sheet4 from './mozart_piano_sonata_11/4.png';
+import Sheet5 from './mozart_piano_sonata_11/5.png';
+import Sheet6 from './mozart_piano_sonata_11/6.png';
+import Sheet7 from './mozart_piano_sonata_11/7.png';
+import Sheet8 from './mozart_piano_sonata_11/8.png';
+import Sheet9 from './mozart_piano_sonata_11/9.png';
+import Sheet10 from './mozart_piano_sonata_11/10.png';
+import Sheet11 from './mozart_piano_sonata_11/11.png';
+import Sheet12 from './mozart_piano_sonata_11/12.png';
+import Sheet13 from './mozart_piano_sonata_11/13.png';
+import Sheet14 from './mozart_piano_sonata_11/14.png';
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -62,22 +77,39 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div class="container">
-          <div class="container__left" id="left">
-            <div class="frame-wrapper__video">
+        <div className="container">
+          <div className="container__left" id="left">
+            <div className="frame-wrapper__video">
               <iframe
                 width="560"
                 height="315"
                 src="https://www.youtube-nocookie.com/embed/vp_h649sZ9A"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
-          <div class="resizer" id="resizer"></div>
-          <div class="container__right" id="right">Right</div>
+          <div className="resizer" id="resizer"></div>
+          <div className="container__right" id="right">
+            <div className="img-wrapper">
+              <img src={Sheet1} alt="[sheet]"/>
+              <img src={Sheet2} alt="[sheet]"/>
+              <img src={Sheet3} alt="[sheet]"/>
+              <img src={Sheet4} alt="[sheet3]"/>
+              <img src={Sheet5} alt="[sheet3]"/>
+              <img src={Sheet6} alt="[sheet3]"/>
+              <img src={Sheet7} alt="[sheet3]"/>
+              <img src={Sheet8} alt="[sheet3]"/>
+              <img src={Sheet9} alt="[sheet3]"/>
+              <img src={Sheet10} alt="[sheet3]"/>
+              <img src={Sheet11} alt="[sheet3]"/>
+              <img src={Sheet12} alt="[sheet3]"/>
+              <img src={Sheet13} alt="[sheet3]"/>
+              <img src={Sheet14} alt="[sheet3]"/>
+            </div>
+          </div>
         </div>
       </div>
     );
