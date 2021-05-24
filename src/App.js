@@ -24,10 +24,6 @@ class App extends React.Component {
       x: 0,
       leftWidth: 0,
     };
-    
-    this.mouseDownHandler = this.mouseDownHandler.bind(this);
-    this.mouseMoveHandler = this.mouseMoveHandler.bind(this);
-    this.mouseUpHandler = this.mouseUpHandler.bind(this);
   }
 
   componentDidMount() {
@@ -38,7 +34,7 @@ class App extends React.Component {
     this.resizer.addEventListener("mousedown", this.mouseDownHandler);
   }
 
-  mouseDownHandler(e) {
+  mouseDownHandler = (e) => {
     this.setState({
       x: e.clientX,
       leftWidth: this.leftSide.getBoundingClientRect().width
@@ -48,7 +44,7 @@ class App extends React.Component {
     document.addEventListener("mouseup", this.mouseUpHandler);
   }
 
-  mouseMoveHandler(e) {
+  mouseMoveHandler = (e) => {
     const dx = e.clientX - this.state.x;
   
     const percent_leftWidth = ((this.state.leftWidth + dx) * 100) / this.resizer.parentNode.getBoundingClientRect().width;
@@ -62,7 +58,7 @@ class App extends React.Component {
     this.rightSide.style.pointerEvents = "none";
   };
 
-  mouseUpHandler() {
+  mouseUpHandler = (e) => {
     document.body.style.removeProperty("cursor");
   
     this.leftSide.style.removeProperty("user-select");
