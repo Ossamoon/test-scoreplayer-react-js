@@ -48,16 +48,29 @@
   justify-content: center;
 }
 
-.img-wrapper {
+.all-img-wrapper {
   width: 100%;
   height: 100%;
   overflow: scroll;
-  display:flex;
-  flex-flow: column;
 }
 
-.img-wrapper img {
+.sheet-wrapper {
   width: 100%;
+  position: relative;
+}
+
+.sheet-wrapper img {
+  width: 100%;
+}
+
+.bar-row {
+  width: 100%;
+  height: 9.04%;
+  position: absolute;
+  top: 14.68%;
+  background-color: red;
+  opacity: 0.2;
+  z-index: 2;
 }
 
 @keyframes App-logo-spin {

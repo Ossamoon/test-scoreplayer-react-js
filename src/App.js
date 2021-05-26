@@ -89,21 +89,50 @@ class App extends React.Component {
           </div>
           <div className="resizer" id="resizer"></div>
           <div className="container__right" id="right">
-            <div className="img-wrapper">
-              <img src={Sheet1} alt="[sheet]"/>
-              <img src={Sheet2} alt="[sheet]"/>
-              <img src={Sheet3} alt="[sheet]"/>
-              <img src={Sheet4} alt="[sheet3]"/>
-              <img src={Sheet5} alt="[sheet3]"/>
-              <img src={Sheet6} alt="[sheet3]"/>
-              <img src={Sheet7} alt="[sheet3]"/>
-              <img src={Sheet8} alt="[sheet3]"/>
-              <img src={Sheet9} alt="[sheet3]"/>
-              <img src={Sheet10} alt="[sheet3]"/>
-              <img src={Sheet11} alt="[sheet3]"/>
-              <img src={Sheet12} alt="[sheet3]"/>
-              <img src={Sheet13} alt="[sheet3]"/>
-              <img src={Sheet14} alt="[sheet3]"/>
+            <div className="all-img-wrapper">
+              <div className="sheet-wrapper">
+                <img src={Sheet1} alt="[sheet]" />
+                <div className="bar-row"></div>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet2} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet3} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet4} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet5} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet6} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet7} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet8} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet9} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet10} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet11} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet12} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet13} alt="[sheet]"/>
+              </div>
+              <div className="sheet-wrapper">
+                <img src={Sheet14} alt="[sheet]"/>
+              </div>
             </div>
           </div>
         </div>
